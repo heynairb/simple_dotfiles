@@ -373,6 +373,9 @@ else
   nnoremap <silent> <leader>sh :VimShellCreate<CR>
 endif
 
+" set mouse mode to true
+set mouse=a
+
 "*****************************************************************************
 "" Functions
 "*****************************************************************************
