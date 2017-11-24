@@ -7,5 +7,5 @@ sudo rm -rd ~/temp
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp vimrc ~/.vimrc
-vim +PluginInstall +qall
+vim +PlugInstall +qall
 cp tmux.conf ~/.tmux.conf
