@@ -182,6 +182,9 @@ endif
 " vim-scala
 Plug 'derekwyatt/vim-scala'
 
+" airline statusline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 "*****************************************************************************
 "*****************************************************************************
