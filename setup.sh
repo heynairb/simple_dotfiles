@@ -5,7 +5,8 @@ mkdir ~/.vim/colors
 mv ~/temp/colors/molokai.vim ~/.vim/colors/molokai.vim
 sudo rm -rd ~/temp
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 cp vimrc ~/.vimrc
 vim +PlugInstall +qall
 cp tmux.conf ~/.tmux.conf
