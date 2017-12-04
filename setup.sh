@@ -6,7 +6,8 @@ cp vimrc ~/.vimrc
 vim +PlugInstall +qall
 ~/.vim/plugged/YouCompleteMe/install.py --all
 cp tmux.conf ~/.tmux.conf
-cp bashrc ~/.bashrc
+cp bash_profile ~/.bash_profile
+
 
 git clone https://github.com/tomasr/molokai.git ~/temp
 mkdir ~/.vim/colors
