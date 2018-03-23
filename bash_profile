@@ -5,3 +5,8 @@ eval "$(pyenv init -)"
 
 #for qt
 export PATH="/usr/local/opt/qt/bin:$PATH"
+
+#for reading markdown files
+rmd () {
+    pandoc $1 | lynx -stdin
+}

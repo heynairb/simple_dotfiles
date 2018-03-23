@@ -12,5 +12,11 @@ cp bash_profile ~/.bash_profile
 git clone https://github.com/tomasr/molokai.git ~/temp
 mkdir ~/.vim/colors
 mv ~/temp/colors/molokai.vim ~/.vim/colors/molokai.vim
+
+
+git clone git@github.com:powerline/fonts.git ~/temp/fonts
+~/temp/fonts/install.sh
+
 sudo rm -rd ~/temp
+
 
