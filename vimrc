@@ -49,6 +49,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-scripts/Vimpy'
+Plug 'edkolev/tmuxline.vim'
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -798,9 +799,9 @@ endif
 "*****************************************************************************
 
 " vim-airline
-"if !exists('g:airline_symbols')
-""  let g:airline_symbols = {}
-"endif
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
 
 "if !exists('g:airline_powerline_fonts')
 "  let g:airline#extensions#tabline#left_sep = ' '
@@ -820,15 +821,15 @@ endif
 "  let g:airline_symbols.paste     = '∥'
 "  let g:airline_symbols.whitespace = 'Ξ'
 "else
-"  let g:airline#extensions#tabline#left_sep = ''
-"  let g:airline#extensions#tabline#left_alt_sep = ''
+  let g:airline#extensions#tabline#left_sep = ''
+  let g:airline#extensions#tabline#left_alt_sep = ''
 
   " powerline symbols
-"  let g:airline_left_sep = ''
-"  let g:airline_left_alt_sep = ''
-"  let g:airline_right_sep = ''
-"  let g:airline_right_alt_sep = ''
-"  let g:airline_symbols.branch = ''
-"  let g:airline_symbols.readonly = ''
-"  let g:airline_symbols.linenr = ''
+  let g:airline_left_sep = ''
+  let g:airline_left_alt_sep = ''
+  let g:airline_right_sep = ''
+  let g:airline_right_alt_sep = ''
+  let g:airline_symbols.branch = ''
+  let g:airline_symbols.readonly = ''
+  let g:airline_symbols.linenr = ''
 "endif
