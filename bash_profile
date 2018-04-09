@@ -10,3 +10,10 @@ export PATH="/usr/local/opt/qt/bin:$PATH"
 rmd () {
     pandoc $1 | lynx -stdin
 }
+
+#virtualenvwrapper
+export WORKON_HOME=~/Envs
+source /usr/local/bin/virtualenvwrapper.sh
+
+#autoenv
+source /usr/local/opt/autoenv/activate.sh
