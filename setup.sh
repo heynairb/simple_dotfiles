@@ -19,8 +19,8 @@ git clone git@github.com:powerline/fonts.git ~/temp/fonts
 ~/temp/fonts/install.sh
 
 git clone git@github.com:sgolovine/PlexNerdfont.git ~/temp/plexfonts
-cp -r ~/temp/plexfonts/Regular/ ~/Library/Fonts
+cp -r ~/temp/plexfonts/patched/ttf/ ~/Library/Fonts
 
-sudo rm -rd ~/temp
+#sudo rm -rd ~/temp
 
 
