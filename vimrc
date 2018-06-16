@@ -50,6 +50,7 @@ Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-scripts/Vimpy'
 Plug 'edkolev/tmuxline.vim'
+Plug 'Chiel92/vim-autoformat'
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
