@@ -836,3 +836,6 @@ endif
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 "endif
+
+"   
+noremap <F3> :Autoformat<CR>
