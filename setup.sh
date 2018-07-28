@@ -1,13 +1,19 @@
 #!/usr/bin/env bash
-
+current_directory=$(pwd)
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 cp vimrc ~/.vimrc
 vim +PlugInstall +qall
+echo 'running youcompleteme setup'
+brew reinstall macvim --with-lua --with-luajit --with-override-system-vim
+brew unlink vim
+brew link --overwrite macvim
+cd ~/.vim/plugged/YouCompleteMe/; git submodule update --init --recursive
 ~/.vim/plugged/YouCompleteMe/install.py --all
-cp tmux.conf ~/.tmux.conf
-cp tmux-airline.conf ~/.tmux-airline.conf
-cp bash_profile ~/.bash_profile
+echo 'finished youcompleteme setup'
+cp "${current_directory}/tmux.conf ~/.tmux.conf"
+cp "${current_directory}/tmux-airline.conf ~/.tmux-airline.conf"
+cp "${current_directory}/bash_profile ~/.bash_profile"
 
 
 git clone https://github.com/tomasr/molokai.git ~/temp
@@ -21,6 +27,6 @@ git clone git@github.com:powerline/fonts.git ~/temp/fonts
 git clone git@github.com:sgolovine/PlexNerdfont.git ~/temp/plexfonts
 cp -r ~/temp/plexfonts/patched/ttf/ ~/Library/Fonts
 
-#sudo rm -rd ~/temp
+sudo rm -rd ~/temp
 
 

@@ -51,6 +51,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'vim-scripts/Vimpy'
 Plug 'edkolev/tmuxline.vim'
 Plug 'Chiel92/vim-autoformat'
+Plug 'Valloric/YouCompleteMe'
+Plug 'luochen1990/rainbow'
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -131,7 +134,10 @@ Plug 'jelera/vim-javascript-syntax'
 
 " lisp
 "" Lisp Bundle
-Plug 'vim-scripts/slimv.vim'
+"Plug 'vim-scripts/slimv.vim'
+
+" lisp editor
+Plug 'eraserhd/parinfer-rust', {'do': 'cargo build --release'}
 
 
 " lua
