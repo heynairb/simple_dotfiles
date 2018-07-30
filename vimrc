@@ -845,3 +845,22 @@ endif
 
 "   
 noremap <F3> :Autoformat<CR>
+
+"change cursor on insert mode
+let &t_SI = "\e[3 q"
+let &t_EI = "\e[2 q"
+
+"Other options (replace the number after \e[):])
+"Ps = 0  -> blinking block.
+"Ps = 1  -> blinking block (default).
+"Ps = 2  -> steady block.
+"Ps = 3  -> blinking underline.
+"Ps = 4  -> steady underline.
+"Ps = 5  -> blinking bar (xterm).
+"Ps = 6  -> steady bar (xterm).
+
+" optional reset cursor on start:
+augroup myCmds
+au!
+autocmd VimEnter * silent !echo -ne "\e[2 q"
+augroup END]]]"
