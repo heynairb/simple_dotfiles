@@ -11,6 +11,9 @@ brew link --overwrite macvim
 cd ~/.vim/plugged/YouCompleteMe/; git submodule update --init --recursive
 ~/.vim/plugged/YouCompleteMe/install.py --all
 echo 'finished youcompleteme setup'
+echo 'rbenv install'
+brew install rbenv
+
 cp "${current_directory}/tmux.conf ~/.tmux.conf"
 cp "${current_directory}/tmux-airline.conf ~/.tmux-airline.conf"
 cp "${current_directory}/bash_profile ~/.bash_profile"

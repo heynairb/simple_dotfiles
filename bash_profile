@@ -16,3 +16,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 #autoenv
 source /usr/local/opt/autoenv/activate.sh
+
+#rbenv
+eval "$(rbenv init -)"
