@@ -183,6 +183,8 @@ Plug 'racer-rust/vim-racer'
 " Rust.vim
 Plug 'rust-lang/rust.vim'
 
+"reasonML
+Plugin 'reasonml-editor/vim-reason-plus'
 
 " scala
 if has('python')
