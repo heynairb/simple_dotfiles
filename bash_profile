@@ -19,3 +19,6 @@ source /usr/local/opt/autoenv/activate.sh
 
 #rbenv
 eval "$(rbenv init -)"
+
+#GOLANG
+export GOPATH=$HOME/go
