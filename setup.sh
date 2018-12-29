@@ -5,7 +5,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cp vimrc ~/.vimrc
 vim +PlugInstall +qall
 echo 'running youcompleteme setup'
-brew reinstall macvim --with-lua --with-luajit --with-override-system-vim
+brew reinstall macvim --with-luajit --with-override-system-vim
 brew unlink vim
 brew link --overwrite macvim
 cd ~/.vim/plugged/YouCompleteMe/; git submodule update --init --recursive
