@@ -14,9 +14,9 @@ echo 'finished youcompleteme setup'
 echo 'rbenv install'
 brew install rbenv
 
-cp "${current_directory}/tmux.conf ~/.tmux.conf"
-cp "${current_directory}/tmux-airline.conf ~/.tmux-airline.conf"
-cp "${current_directory}/bash_profile ~/.bash_profile"
+sudo cp "${current_directory}/tmux.conf ~/.tmux.conf"
+sudo cp "${current_directory}/tmux-airline.conf ~/.tmux-airline.conf"
+sudo cp "${current_directory}/bash_profile ~/.bash_profile"
 
 
 git clone https://github.com/tomasr/molokai.git ~/temp

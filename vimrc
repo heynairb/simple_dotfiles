@@ -178,10 +178,10 @@ Plug 'ecomba/vim-ruby-refactoring'
 
 " rust
 " Vim racer
-Plug 'racer-rust/vim-racer'
+"Plug 'racer-rust/vim-racer'
 
 " Rust.vim
-Plug 'rust-lang/rust.vim'
+"Plug 'rust-lang/rust.vim'
 
 "reasonML
 Plug 'reasonml-editor/vim-reason-plus'
